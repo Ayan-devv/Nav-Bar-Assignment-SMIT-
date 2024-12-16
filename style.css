@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.navParent {
+    display: flex;
+    padding-left: 4%;
+    padding-right: 4%;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    -webkit-box-shadow: 1px 13px 38px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 1px 13px 38px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 13px 38px 0px rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+
+}
+
+.menu {
+    display: flex;
+    font-weight: 500;
+    gap: 10%;
+    position: relative;
+}
+.menu:hover {
+    text-decoration: underline;
+}
+
+i {
+    font-size: 25px;
+    position: relative;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.hamburgerMenu {
+    position: fixed;
+    right: 5%;
+    display: none;
+}
+
+.fa-solid {
+    font-size: 30px;
+}
+
+.closeMenu {
+    position: fixed;
+    right: 5%;
+    display: none;
+}
+
+.responsiveMenu {
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 16px 8px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 0px 3px 16px 8px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 3px 16px 8px rgba(0, 0, 0, 0.34);
+    height: 80vh;
+    width: 50%;
+    margin-top: 3%;
+    margin-left: 3%;
+    padding-top: 6%;
+    padding-left: 7%;
+    display: none;
+
+}
+
+li {
+    list-style-type: none;
+    font-size: 120%;
+    margin-bottom: 15%;
+    font-weight: 600;
+}
+
+.icons2 {
+    position: absolute;
+}
+
+@media (max-width: 760px) {
+    .menu {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .hamburgerMenu {
+        display: block;
+    }
+}
